@@ -19,6 +19,6 @@ void test_validate_my_username()
      * config file and my_username() functions are setup properly
      */
     const char* hardcoded_username = my_username();
-    char* config_username = malloc_username_from_conf_file();
-    TEST_ASSERT_EQUAL_STRING_MESSAGE(hardcoded_username, config_username,"Name is matching!");
+    const char* config_username = malloc_username_from_conf_file();
+    TEST_ASSERT_EQUAL_STRING_MESSAGE(hardcoded_username, config_username,"Name is not matching!");
 }
