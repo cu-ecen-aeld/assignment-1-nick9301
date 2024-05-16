@@ -6,7 +6,7 @@ writestr=$2
 
 # Check if the correct number of arguments is not given
 if [ $# -ne 2 ]; then
-    echo "Error: Two arguments required: 1) file path, 2) string to write"
+    echo "Error: Two arguments required"
     exit 1
 fi
 
